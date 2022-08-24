@@ -1,3 +1,5 @@
+package MPR;
+
 import java.util.Scanner;
 
 public class MPR {
