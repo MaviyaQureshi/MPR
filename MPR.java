@@ -38,6 +38,7 @@ public class MPR {
         int choice = sc.nextInt();
         switch (choice) {
             case 1: {
+                gaussElimination();
                 break;
             }
             case 2: {
@@ -62,7 +63,7 @@ public class MPR {
     }
 
     // Function for Gauss-Elimmination
-    public void gaussElimination() {
+    public static void gaussElimination() {
     }
 
     // Function for Gauss-Seidal
