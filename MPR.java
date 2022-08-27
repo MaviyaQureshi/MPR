@@ -1,11 +1,9 @@
-package MPR;
-
 import java.util.Scanner;
 
 public class MPR {
 
     // Function to read matrix
-    public static void userMatrix() {
+    public static void gaussElimination() {
         int m, n, i, j;
         Scanner sc = new Scanner(System.in);
         try {
@@ -14,7 +12,7 @@ public class MPR {
             n = sc.nextInt();
 
             // Declare the matrix
-            int a[][] = new int[m][n];
+            int a[][] = new int[m][n + 1];
 
             // Read the matrix values
             System.out.println("Enter the elements of the matrix");
@@ -39,6 +37,6 @@ public class MPR {
 
     // Driver code
     public static void main(String[] args) {
-        userMatrix();
+
     }
 }
