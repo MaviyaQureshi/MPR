@@ -35,7 +35,7 @@ public class MPR {
     }
 
     // Function for Gauss-Elimmination
-    public static void gaussElimination() {
+    public int gaussElimination() {
         int n, i, j, k;
         Scanner sc = new Scanner(System.in);
         try {
@@ -96,6 +96,7 @@ public class MPR {
         } finally {
             sc.close();
         }
+        return 0;
     }
 
     // Function for Gauss-Seidal
