@@ -36,31 +36,62 @@ public class MPR {
 
     // Function for Gauss-Elimmination
     public static void gaussElimination() {
-        int m, n, i, j;
+        int n, i, j, k;
         Scanner sc = new Scanner(System.in);
         try {
             System.out.println("Enter the order of matrix (m & n):");
-            m = sc.nextInt();
             n = sc.nextInt();
 
             // Declare the matrix
-            int a[][] = new int[m][n + 1];
+            int a[][] = new int[n][n + 1];
 
             // Read the matrix values
             System.out.println("Enter the elements of the matrix");
-            for (i = 0; i < m; i++) {
+            for (i = 0; i < n; i++) {
                 for (j = 0; j < n + 1; j++) {
                     a[i][j] = sc.nextInt();
                 }
             }
+
             // Display the elements of the matrix
             System.out.println("Elements of the matrix are");
-            for (i = 0; i < m; i++) {
+            for (i = 0; i < n; i++) {
                 for (j = 0; j < n + 1; j++) {
-                    System.out.print(a[i][j] + "  ");
+                    System.out.print(a[i][j] + " ");
                 }
                 System.out.println();
             }
+
+            float c, sum = 0;
+            float x[] = new float[10];
+            // Loop for making the matrix into an upper triangle matrix
+            for (j = 0; j < n; j++) {
+                for (i = 0; i < n; i++) {
+                    if (i > j) {
+                        c = a[i][j] / a[j][j];
+                        for (k = 0; k < n + 1; k++) {
+                            a[i][k] -= c * a[j][k];
+                        }
+                    }
+                }
+            }
+
+            x[n] = a[n][n + 1] / a[n][n];
+
+            // Loop for backward substitution
+            for (i = n - 1; i >= 1; i--) {
+                sum = 0;
+                for (j = i; j < n; j++) {
+                    sum += a[i][j] * x[j];
+                }
+                x[i] = (a[i][n + 1] - sum) / a[i][i];
+            }
+
+            System.out.println("The soltuion is :");
+            for (i = 0; i < n; i++) {
+                System.out.println("x" + i + "=" + x[i]);
+            }
+
         } catch (Exception e) {
         } finally {
             sc.close();
