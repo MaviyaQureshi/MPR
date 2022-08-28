@@ -30,8 +30,7 @@ public class MPR {
             }
         } catch (Exception e) {
         }
-        // Scanner mc = new Scanner(System.in);
-        System.out.printf("Select the choice of your operation:");
+        System.out.println("Select the choice of your operation:");
         System.out.println(
                 "1.Gauss-Elimination method \n2.Gauss-Seidal method \n3.Newton's forward and backward interpolation method \n4.Inverse of a matrix using Gauss-elimination");
         System.out.printf("Enter your choice :");
