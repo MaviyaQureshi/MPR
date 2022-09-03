@@ -1,10 +1,11 @@
 // Implementing Gauss Seidel Method in Java
-import java.io.BufferedReader;
+/*import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.util.StringTokenizer;*/
+import java.util.Scanner;
 
 class GFG {
 	// we set a max number of iterations to
