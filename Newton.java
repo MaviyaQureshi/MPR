@@ -126,12 +126,6 @@ class Newton {
                     System.out.println("\nThe answer is:" + sum);
                     System.out.println("\nOperation Performed Successfully!!");
                     break;
-
-                case 3:
-
-                    System.exit(0);
-                    break;
-
             }
         }
     }
