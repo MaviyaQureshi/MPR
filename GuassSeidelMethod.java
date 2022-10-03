@@ -91,6 +91,5 @@ class Main {
       System.out.print("\nApproximate Value of x is: " + x);
       System.out.print("\nApproximate Value of y is: " + y);
       System.out.print("\nApproximate Value of z is: " + z);
-
    }
 }
