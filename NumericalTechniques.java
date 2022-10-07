@@ -9,11 +9,11 @@ public class NumericalTechniques {
             System.out.println("\nSelect the choice of your operation:");
             System.out.println(
                     "\n1.Gauss-Elimination method \n2.Gauss-Seidal method \n3.Newton's forward and backward interpolation method \n4.Inverse of a matrix using Gauss-elimination \n5.Traversal of a Sparse Matrix \n6.Exit");
-            System.out.printf("Enter your choice :");
+            System.out.printf("Enter your choice : ");
             choice = sc.nextInt();
             switch (choice) {
                 case 1: {
-                    System.out.println("Gaussian Elimination Algorithm Test\n");
+                    System.out.println("Gaussian Elimination Algorithm Test");
                     class GaussianElimination {
                         public void solve(double[][] A, double[] B) {
                             int N = B.length;
@@ -76,25 +76,37 @@ public class NumericalTechniques {
                             for (int i = 0; i < N; i++)
                                 System.out.printf("%.3f ", sol[i]);
                             System.out.println();
+
+                            System.out.println();
                         }
+
                     }
                     /** Make an object of GaussianElimination class **/
                     GaussianElimination ge = new GaussianElimination();
 
-                    System.out.println("\nEnter number of variables");
+                    System.out.println("\nEnter number of variables : ");
                     int N = sc.nextInt();
 
                     double[] B = new double[N];
                     double[][] A = new double[N][N];
 
-                    System.out.println("\nEnter " + N + " equations coefficients ");
+                    System.out.println("\nEnter " + N + " equations coefficients : ");
                     for (int i = 0; i < N; i++)
                         for (int j = 0; j < N; j++)
                             A[i][j] = sc.nextDouble();
 
-                    System.out.println("\nEnter " + N + " solutions");
+                    System.out.println("\nEnter " + N + " solutions : ");
                     for (int i = 0; i < N; i++)
                         B[i] = sc.nextDouble();
+
+                    /* print augmented matrix */
+                    System.out.println("The Augmented Matrix is : \n");
+                    for (int i = 0; i < N; i++) {
+                        for (int j = 0; j < N; j++)
+                            System.out.printf(A[i][j] + " ");
+                        System.out.printf(" | ");
+                        System.out.printf(B[i] + "\n");
+                    }
 
                     ge.solve(A, B);
                     break;
