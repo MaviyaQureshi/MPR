@@ -5,7 +5,6 @@ public class NumericalTechniques {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice = 1;
-        // GaussianElimination obj = new GaussianElimination();
         while (choice > 0) {
             System.out.println("\nSelect the choice of your operation:");
             System.out.println(
