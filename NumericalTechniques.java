@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MPR {
+public class NumericalTechniques {
     // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -35,8 +35,6 @@ public class MPR {
                                 B[k] = B[max];
                                 B[max] = t;
 
-                                augmentedMatrix(A, B);
-
                                 /** pivot factor within A and B **/
                                 for (int i = k + 1; i < N; i++) {
                                     double factor = A[i][k] / A[k][k];
@@ -59,18 +57,6 @@ public class MPR {
                             }
                             /** Print solution **/
                             printSolution(solution);
-                        }
-
-                        /** function to print augmented matrix **/
-                        public void augmentedMatrix(double[][] A, double[] B) {
-                            int N = B.length;
-                            System.out.println("Augmented Matrix is : ");
-                            for (int i = 0; i < N; i++) {
-                                for (int j = i; j < N; j++) {
-                                    System.out.print(A[i][j] + " ");
-                                }
-                                System.out.print("| " + B[i] + "\n");
-                            }
                         }
 
                         /** function to print upper-triangular **/
@@ -126,6 +112,7 @@ public class MPR {
                 }
 
                 case 4: {
+                    // InverseGaussEli.main(args);
                     break;
                 }
 
