@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Newton {
+public class Newton {
 
     static int fact(int i) {
         if (i == 0) {
