@@ -121,6 +121,7 @@ public class NumericalTechniques {
                 }
 
                 case 6: {
+                    System.out.println("You have successfully exited!!");
                     System.exit(0);
                     break;
                 }
