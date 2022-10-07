@@ -100,7 +100,7 @@ public class InverseGaussEli {
         System.out.print("\nInverse of matrix A is as follow:\n");
         for (i = 0; i <= 2; i++) {
             for (j = 0; j <= 2; j++) {
-                System.out.print("    " + inverse[i][j]);
+                System.out.printf(" %.3f   ", inverse[i][j]);
             }
             System.out.print("\n");
         }

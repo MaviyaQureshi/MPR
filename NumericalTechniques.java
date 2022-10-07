@@ -112,7 +112,7 @@ public class NumericalTechniques {
                 }
 
                 case 4: {
-                    // InverseGaussEli.main(args);
+                    InverseGaussEli.main(args);
                     break;
                 }
 
