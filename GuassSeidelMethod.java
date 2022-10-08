@@ -2,6 +2,7 @@ import java.util.*;
 
 class Main {
 
+   /* calculating the values of variables */
    static double gs(double x, double d, double b, double y, double c, double z, double a) {
       x = (d - b * y - c * z) / a;
       return x;
@@ -36,6 +37,7 @@ class Main {
       double c3 = coeff[10];
       double d3 = coeff[11];
 
+      /* Displaying the equation */
       System.out.print("\nEntered equations are as follow:\n");
       System.out.print("\n(" + a1);
       System.out.print(")x+(" + b1);
@@ -59,6 +61,7 @@ class Main {
       y = 0;
       z = 0;
 
+      /* passing the values of equation */
       System.out.print("\n");
       System.out.print("\nEnter number of iterations to be performed: ");
       n = sc.nextInt();
@@ -80,6 +83,7 @@ class Main {
       System.out.print("\nThe Value of y is: " + y);
       System.out.print("\nThe Value of z is: " + z);
 
+      /* approximating the calculated values */
       x = approx(x);
       y = approx(y);
       z = approx(z);
