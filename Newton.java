@@ -33,7 +33,7 @@ public class Newton {
         double s, s1, a1, h1, u, prod, sum, a, h, d, sum1;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter no. of rows of data:");
+        System.out.print("Enter no. of rows of data:  ");
         n = sc.nextInt();
         double data[][];
         data = new double[n][n + 1];
