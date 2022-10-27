@@ -128,6 +128,7 @@ public class NumericalTechniques {
                 }
 
                 case 5: {
+                    Sparse.main(args);
                     break;
                 }
 
@@ -138,8 +139,8 @@ public class NumericalTechniques {
                 }
 
                 default: {
-                    System.out.printf("Please enter a valid choice : ");
-                    choice = sc.nextInt();
+                    System.out.printf("\nInvalid Choice!\n");
+                    break;
                 }
             }
         }
