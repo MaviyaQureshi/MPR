@@ -144,5 +144,6 @@ public class NumericalTechniques {
                 }
             }
         }
+        sc.close();
     }
 }

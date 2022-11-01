@@ -138,7 +138,7 @@ class user extends JFrame implements ActionListener {
 
         String ele = cb.getSelectedItem() + "";
 
-        /* Array Creation */
+        /* Sparse matrix Creation */
 
         int a[][] = new int[i][j];
         a[0][0] = 0;

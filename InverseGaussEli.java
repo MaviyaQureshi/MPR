@@ -8,9 +8,8 @@ public class InverseGaussEli {
         System.out.print("\n");
         int i, j;
         double a, b, c, d, e, x1, y1, z1, x2, y2, z2, x3, y3, z3;
-        double data[][], inverse[][];
-        data = new double[3][6];
-        inverse = new double[3][3];
+        double data[][] = new double[3][6];
+        double inverse[][] = new double[3][3];
         Scanner sc = new Scanner(System.in);
 
         /* matrix input */
