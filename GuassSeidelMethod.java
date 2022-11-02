@@ -13,7 +13,7 @@ class Main {
       double x, y, z;
       double coeff[] = new double[12];
       Scanner sc = new Scanner(System.in);
-      System.out.println("\nEnter the coefficients of 3 variables and constants for 3 equations: \n");
+      System.out.println("\nEnter the coefficients of 3 variables and constants for 3 equations: ");
       for (i = 0; i < 12; i++) {
          coeff[i] = sc.nextDouble();
       }
