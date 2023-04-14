@@ -9,11 +9,12 @@ def rk4(x0, y0, h, n, a, b, c, d):
     x = [x0]
     y = [y0]
     for i in range(n):
-        k1 = h * f(x[i], y[i], a, b, c, d)
-        y_next = y[i] + k1
-        y.append(y_next)
         x_next = x[i] + h
         x.append(x_next)
+        k1 = h * f(x[i], y[i], a, b, c, d)
+        y_next_ = y[i] + k1
+        y_next = y[i] + (h/2)*(f(x[i], y[i], a, b, c, d)+f(x[i+1],y_next_, a, b, c, d))
+        y.append(y_next)
     return x, y
 
 # Get user input for initial conditions and step size
