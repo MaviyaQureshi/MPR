@@ -4,7 +4,7 @@ import numpy as np
 import math
 
 master = Tk()
-master.geometry("600x450+500+200")
+master.geometry("700x550+400+150")
 
 master.title("Numerical Techniques")
 
