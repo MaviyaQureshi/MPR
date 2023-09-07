@@ -50,7 +50,7 @@ def clear():
     b1.destroy()
     cb.destroy()
     entrycanva.destroy()
-    cb1 = ttk.Combobox(master, values=l, width=30)
+    cb1 = ttk.Combobox(master, values=l, width=30,font=("Arial",11))
     cb1.place(relx=1, anchor=NE)
     cb1.bind("<<ComboboxSelected>>", callBack)
 
@@ -70,7 +70,7 @@ def gauss_elimination():
         l2.destroy()
         b1.destroy()
         entrycanva1.destroy()
-        cb1 = ttk.Combobox(master, values=l, width=30)
+        cb1 = ttk.Combobox(master, values=l, width=30,font=("Arial",11))
         cb1.place(relx=1, anchor=NE)
         cb1.bind("<<ComboboxSelected>>", callBack)
 
@@ -201,7 +201,7 @@ def InverseUsingGaussEli():
         l2.destroy()
         b1.destroy()
         entrycanva2.destroy()
-        cb2 = ttk.Combobox(master, values=l, width=30)
+        cb2 = ttk.Combobox(master, values=l, width=30,font=("Arial",11))
         cb2.place(relx=1, anchor=NE)
         cb2.bind("<<ComboboxSelected>>", callBack)
 
@@ -298,7 +298,7 @@ def GaussSeidel():
         itr.destroy()
         itre.destroy()
         entrycanva7.destroy()
-        cb0 = ttk.Combobox(master, values=l, width=30)
+        cb0 = ttk.Combobox(master, values=l, width=30,font=("Arial",11))
         cb0.place(relx=1, anchor=NE)
         cb0.bind("<<ComboboxSelected>>", callBack)
 
@@ -388,7 +388,7 @@ def NewtonForward():
         b1.destroy()
         entrycanva8.destroy()
         entrycanva9.destroy()
-        cb1 = ttk.Combobox(master, values=l, width=30)
+        cb1 = ttk.Combobox(master, values=l, width=30,font=("Arial",11))
         cb1.place(relx=1, anchor=NE)
         cb1.bind("<<ComboboxSelected>>", callBack)
 
@@ -507,7 +507,7 @@ def NewtonBackward():
         b1.destroy()
         entrycanva10.destroy()
         entrycanva11.destroy()
-        cb1 = ttk.Combobox(master, values=l, width=30)
+        cb1 = ttk.Combobox(master, values=l, width=30,font=("Arial",11))
         cb1.place(relx=1, anchor=NE)
         cb1.bind("<<ComboboxSelected>>", callBack)
 
@@ -629,6 +629,7 @@ def EulerMethod():
         e1.destroy()
         l2.destroy()
         b1.destroy()
+        btn.destroy()
         entrycanva5.destroy()
         entrycanva6.destroy()
 
@@ -724,6 +725,7 @@ def RungeKuttaMethod():
         e1.destroy()
         l2.destroy()
         b1.destroy()
+        btn.destroy()
         entrycanva3.destroy()
         entrycanva4.destroy()
 
@@ -813,7 +815,7 @@ def update():
 
 
 l = ["Gauss Elimination", "Inverse using Gauss Elimination","Gauss Seidel","Newton's Forward Interpolation","Newton's Backward Interpolation","Euler Method","Runge-Kutta Method"]
-cb = ttk.Combobox(master, values=l, width=30)
+cb = ttk.Combobox(master, values=l, width=30,font=("Arial",11))
 cb.place(relx=1, anchor=NE)
 cb.bind("<<ComboboxSelected>>", callBack)
 
